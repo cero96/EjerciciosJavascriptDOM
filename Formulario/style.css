@@ -367,7 +367,39 @@ input:focus {
         font-size: 2rem;
     }
 }
+.card {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 15px;
+    background: #572fb3;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    color: #333;
+}
 
+.card h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.card p {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+
+    padding: 10px 5px;
+    margin: 0;
+
+    border-bottom: 1px solid #eee;
+
+    color: #555;
+}
+
+.card strong {
+    color: #222;
+}
 
 /* =========================
    CELULAR

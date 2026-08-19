@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Formulario</title>
+    <title>Registro de Asistencia</title>
 
     <link rel="stylesheet" href="style.css">
 
@@ -16,69 +16,115 @@
 
     <h1 id="titulo">Registro de Asistencia</h1>
 
-    <div class="contenedor">
+    <main class="contenedor">
 
-        <!-- FORMULARIO -->
-        <div class="formulario">
+        <!-- =========================
+             FORMULARIO
+        ========================== -->
+
+        <section class="formulario">
 
             <h3>Datos Personales</h3>
 
-            <h6>Ingresa tu Nombre</h6>
-            <input
-                type="text"
-                id="nombre"
-                placeholder="Nombre"
-            >
+            <form id="formulario">
 
-            <h6>Ingresa tu Apellido</h6>
-            <input
-                type="text"
-                id="apellido"
-                placeholder="Apellido"
-            >
+                <!-- Nombre -->
+                <label for="nombre">Ingresa tu Nombre</label>
 
-            <h6>Ingresa tu Edad</h6>
-            <input
-                type="text"
-                id="edad"
-                placeholder="Edad"
-            >
-
-            <h6>Ingresa tu Correo</h6>
-            <input
-                type="text"
-                id="correo"
-                placeholder="Correo"
-            >
-
-            <h6>Ingresa tu Teléfono</h6>
-            <input
-                type="text"
-                id="telefono"
-                placeholder="Teléfono"
-            >
-
-            <button id="boton">
-                Guardar Datos
-            </button>
-
-        </div>
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Nombre"
+                    autocomplete="given-name"
+                    required
+                >
 
 
-        <!-- RESULTADO -->
-        <div class="resultado-container">
+                <!-- Apellido -->
+                <label for="apellido">Ingresa tu Apellido</label>
+
+                <input
+                    type="text"
+                    id="apellido"
+                    name="apellido"
+                    placeholder="Apellido"
+                    autocomplete="family-name"
+                    required
+                >
+
+
+                <!-- Edad -->
+                <label for="edad">Ingresa tu Edad</label>
+
+                <input
+                    type="number"
+                    id="edad"
+                    name="edad"
+                    placeholder="Edad"
+                    min="1"
+                    max="120"
+                    required
+                >
+
+
+                <!-- Correo -->
+                <label for="correo">Ingresa tu Correo</label>
+
+                <input
+                    type="email"
+                    id="correo"
+                    name="correo"
+                    placeholder="Correo"
+                    autocomplete="email"
+                    required
+                >
+
+
+                <!-- Teléfono -->
+                <label for="telefono">Ingresa tu Teléfono</label>
+
+                <input
+                    type="tel"
+                    id="telefono"
+                    name="telefono"
+                    placeholder="Teléfono"
+                    autocomplete="tel"
+                    required
+                >
+
+
+                <!-- Botón -->
+                <button
+                    type="button"
+                    id="boton"
+                >
+                    Guardar Datos
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- =========================
+             RESULTADO
+        ========================== -->
+
+        <section class="resultado-container">
 
             <h3>Resultado</h3>
 
             <div id="resultado">
-                Aquí aparecerán los datos registrados
+                <p>👤 Aquí aparecerán los datos registrados</p>
             </div>
 
-        </div>
+        </section>
 
-    </div>
+    </main>
 
 
+    <!-- JavaScript -->
     <script src="main.js"></script>
 
 </body>
